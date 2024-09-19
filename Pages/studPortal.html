@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Portal</h1>
+
+        <!-- Check Result Section -->
+        <section>
+            <h2>Check Your Result</h2>
+            <form id="check-result-form">
+                <label for="cnic">Enter CNIC:</label>
+                <input type="text" id="cnic" placeholder="Enter your CNIC" required>
+                <button type="button" onclick="checkResult()">Check Result</button>
+            </form>
+
+            <!-- Result will be displayed here -->
+            <div id="result"></div>
+        </section>
+    </div>
+
+    <script src="student-script.js" type="module"></script>
+</body>
+</html>
