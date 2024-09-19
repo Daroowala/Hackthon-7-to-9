@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal</title>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Student Portal</h1>
 
-        <!-- Check Result Section -->
         <section>
             <h2>Check Your Result</h2>
             <form id="check-result-form">
@@ -21,11 +20,10 @@
                 <button type="button" onclick="checkResult()">Check Result</button>
             </form>
 
-            <!-- Result will be displayed here -->
             <div id="result"></div>
         </section>
     </div>
 
-    <script src="student-script.js" type="module"></script>
+    <script type="module" src="student-script.js"></script>
 </body>
 </html>
